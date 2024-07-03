@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.showcase{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(img/river.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.naver{
+  width: 90%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.naver ul li{
+  padding: 10px;
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+}
+.naver ul li a{
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.naver ul li::after{
+  content:'';
+  position: absolute;
+  background-color: #fff;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+.naver ul li:hover::after{
+  width: 100%;
+}
